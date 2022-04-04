@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NCG1M8H5MX"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-NCG1M8H5MX');
+	</script>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+ 	<!-- Bootstrap CSS -->
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles2.css">
+
+ 	<!-- Font awesome -->
+ 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+ 	<!-- Google Fonts -->
+ 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700">
+ 	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+
+ 	<title> Sorting Algorithm</title>
+
+ </head>
+
+ <body>
+
+ 	<!-- Title -->
+ 	<section class="title">
+ 		<div class=" glow jumbotron container-fluid">
+ 			<h1>Sorting Visualizer</h1>
+      <hr>
+      <div>
+
+        <div class="glow features">
+          <h3 >Generate New Array!</h3>
+          <button id="a_generate" class="shadow btn btn-lg btn-outline-light" onclick="generate_array()">New Array</button>
+         </div>
+        <div class="col-sm-3 glow feature1">
+          <h3 id="ss">Size of the array:</h3>
+          <input class="shadow" id="a_size" type="range" min=20 max=71 step=1 value=0 onchange="update_array_size()">
+        </div>
+      <div class="glow feature2">
+        <h3>Speed of the algorithm:</h3>
+         <input class="shadow" id="a_speed" type="range" min=1 max=5 step=1 value=4>
+       </div>
+
+<hr>
+      </div>
+        <div class="butt">
+
+			<button id="bbtn" class="shadow btn btn-lg btn-outline-light"    onclick="BubbleSort()">Bubble</button>
+
+			<button id="sbtn" class="shadow btn btn-lg btn-outline-light" onclick="SelectionSort()">Selection</button>
+  
+			<button id="ibtn" class="shadow btn btn-lg btn-outline-light" onclick="InsertionSort()">Insertion</button>
+  
+			<button id="mbtn" class="shadow btn btn-lg btn-outline-light"
+			onclick="MergeSort()">Merge</button>
+  
+			<button id="qbtn" class="shadow btn btn-lg btn-outline-light"
+			onclick="QuickSort()">Quick</button>
+  
+			<button id="hbtn" class="shadow btn btn-lg btn-outline-light"
+			onclick="HeapSort()">Heap</button>
+        </div>
+
+
+ 		</div>
+ 	</section>
+
+  <div id="data">
+
+
+
+  </div>
+
+
+ 	<footer>
+ 		<script src="./scripts/main.js"></script>
+ 		<script src="./scripts/visualizations.js"></script>
+ 		<script src="./scripts/bubble_sort.js"></script>
+ 		<script src="./scripts/selection_sort.js"></script>
+ 		<script src="./scripts/insertion_sort.js"></script>
+ 		<script src="./scripts/merge_sort.js"></script>
+ 		<script src="./scripts/quick_sort.js"></script>
+ 		<script src="./scripts/heap_sort.js"></script>
+ 	</footer>
+ </body>
+
+ </html>
